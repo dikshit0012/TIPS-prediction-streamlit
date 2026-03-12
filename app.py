@@ -1,8 +1,11 @@
 import streamlit as st
 import pickle
 import pandas as pd
+
 model=pickle.load(open('tips_model.pkl','rb'))
+
 st.title('Tips Prediction App')
+
 total_bill=st.number_input('Total Bill')
 size=st.number_input('Size')
 sex=st.selectbox('Sex',['Male','Female'])
