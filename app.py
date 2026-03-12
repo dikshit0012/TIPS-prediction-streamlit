@@ -25,4 +25,8 @@ input_data = pd.DataFrame({
 
 if st.button("Predict Tip"):
     prediction = model.predict(input_data)
+
     st.success(f"Predicted Tip: {prediction[0]:.2f}")
+=======
+    st.success(f"Predicted Tip: {prediction[0]:.2f}")
+
